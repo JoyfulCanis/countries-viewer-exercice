@@ -39,5 +39,23 @@
         color: white;
       }
     }
+    
+    span {
+      background-color: white;
+      width: auto;
+      text-align: center;
+      margin:auto;
+      border-radius: 16px;
+      padding: 2px 4px 0px 4px ;
+      border: 1.5pt solid rgb(18, 212, 203);
+      
+    }
+    .green{
+      color: rgb(18, 252, 18);
+    }
+    .red{
+      color: red;
+    }
+    
   }
 }

@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "author": "Guybrush Threepwood",
+      "content": "      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1621530288602,
+      "id": 1
+    },
+    {
+      "author": "The Big Lebowski",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1621536029778,
+      "id": 2
+    },
+    {
+      "author": "Sam Fischer",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. ",
+      "date": 1621536056135,
+      "id": 3
+    },
+    {
+      "author": "FromScratch",
+      "content": "Au début fut le code et le code fit le monde.\nJe suis le code.\nLe code est tout.\nLà où le code se termine, le monde prend fin.\nTu ne peux avancer en l'absence d'espace.\nRépète.",
+      "date": 1683717054162,
+      "updatedDate": 1683731365288,
+      "id": 4
+    }
+  ]
+}

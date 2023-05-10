@@ -7,8 +7,8 @@ import Card from './Card';
 const Countries = () => {
     const [data, setData] = useState([])
     const [rangeValue, setRangeValue] = useState(36)
-    const [selectedContinent, setSelectedContinent] = useState()
-    const radios = ["All", "Africa", "America", "Asia", "Europe", "Oceania"]
+    const radios = ["Africa", "America", "Asia", "Europe", "Oceania"]
+    const [selectedContinent, setSelectedContinent] = useState("")
     // le useEffect se joue lorsque le composant est monté
     useEffect(() => {
         axios.get("https://restcountries.com/v3.1/all")
@@ -27,16 +27,30 @@ const Countries = () => {
 
                 {radios.map((continent) =>
                     <li>
-                        <input type="radio" id={continent} name="selected-continent" onChange={(e) => setSelectedContinent(e.target.id)}/>
+                        <input type="radio"
+                        id={continent}
+                        name="selected-continent"
+                        checked={continent === selectedContinent}
+                        onChange={(e) => setSelectedContinent(e.target.id)}/>
                         <label htmlFor={continent}>{continent}</label>
                     </li>
                 )}
 
 
             </ul>
+            {selectedContinent && (
+                <button onClick={() => setSelectedContinent("")}>Cancel</button>
+            )}
             <ul>
                 {
-                    data.slice(0, rangeValue).map((country, index) => (<Card key={index} country={country} />))
+                    data
+                    .filter((country) => country.continents[0].includes(selectedContinent))
+                    .sort((a, b) => b.population - a.population)
+                    .slice(0, rangeValue)
+                    .map((country, index) => (
+                    <Card key={index} country={country} />
+                        )
+                    )
                 }
             </ul>
         </div>
